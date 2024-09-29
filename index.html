@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Online</title>
-</head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text */
+      }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px; /* Limit max width for better responsiveness */
+      }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
 
-<body>
-     <!-- Foto Profil -->
-    <img src="Rendy_Foto.jpeg" alt="Rendy"style="width:128px;height:128px;">
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
 
-     <!-- Biodata Diri -->
-     <h4>BIODATA DIRI</h4>
-    <ulNama : Rendy Radithya Supandi</ul>
-    <ul>NIM : 1201225038</ul>
-    <ul>Kelas : 22-SI-002</ul>
-    <ul>Umur : 21 tahun</ul>
-    <ul>Prodi : Sistem Informasi</ul>
-    <ul>Mahasiswa Telkom University Kampus Jakarta</ul>
-   
-     <!-- Riwayat Pendidikan -->
-     <h4>RIWAYAT PENDIDIKAN</h4>
-     <table>
-        <tr>
-          <th>Nama Sekolah</th>
-          <th>Tahun</th>
-        </tr>
-        <tr>
-          <td>SDN Pelamampang 01 Pagi</td>
-          <td>2009 - 2015</td>
-        </tr>
-        <tr>
-          <td>SMPN 141 Jakarta</td>
-          <td>2015 - 2018</td>
-        </tr>
-        <tr>
-            <td>SMAN 6 Jakarta</td>
-            <td>2018 - 2021</td>
-          </tr>
-      </table>
-      
-      <!--Karakter Saya-->
-      <h4>KARAKTER PRIBADI</h4>
-      <p>Saya adalah pribadi yang antusias dan bersemangat dalam mengeksplorasi teknologi baru, selalu berusaha mengikuti perkembangan tren di bidang teknologi dan informasi. Saya memiliki kemampuan analitis yang baik dan senang bekerja dalam tim, terutama dalam proyek-proyek yang membutuhkan kolaborasi dan pemecahan masalah. Selain itu, saya juga aktif dalam organisasi, yang membantu saya mengembangkan keterampilan kepemimpinan serta komunikasi. Hobi saya seperti bermain game, menonton film, dan membaca buku juga memberi saya wawasan yang lebih luas serta perspektif kreatif dalam berbagai situasi.</p>
-</body>
+      img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%; /* Make the image circular */
+        margin-bottom: 20px; /* Space below the image */
+      }
+
+      h4 {
+        margin: 10px 0; /* Space above and below headings */
+      }
+
+      ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+      }
+
+      @media (max-width: 768px) {
+        /* Adjust styles for tablets and smaller screens */
+        body {
+          padding: 10px; /* Reduce padding on smaller screens */
+        }
+
+        table {
+          width: 100%; /* Table takes full width */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Foto Profil -->
+    <h4>FOTO PROFIL</h4>
+    <img src="Rendy_Foto.jpeg" alt="Rendy" />
+
+    <!-- Biodata Diri -->
+    <h4>BIODATA DIRI</h4>
+    <ul>
+      <li>Nama: Rendy Radithya Supandi</li>
+      <li>NIM: 1201225038</li>
+      <li>Kelas: 22-SI-002</li>
+      <li>Umur: 21 tahun</li>
+      <li>Prodi: Sistem Informasi</li>
+      <li>Mahasiswa Telkom University Kampus Jakarta</li>
+    </ul>
+
+    <!-- Riwayat Pendidikan -->
+    <h4>RIWAYAT PENDIDIKAN</h4>
+    <table>
+      <tr>
+        <th>Nama Sekolah</th>
+        <th>Tahun</th>
+      </tr>
+      <tr>
+        <td>SDN Pelamampang 01 Pagi</td>
+        <td>2009 - 2015</td>
+      </tr>
+      <tr>
+        <td>SMPN 141 Jakarta</td>
+        <td>2015 - 2018</td>
+      </tr>
+      <tr>
+        <td>SMAN 6 Jakarta</td>
+        <td>2018 - 2021</td>
+      </tr>
+    </table>
+
+    <!-- Karakter Saya -->
+    <h4>KARAKTER PRIBADI</h4>
+    <p>
+      Saya adalah pribadi yang antusias dan bersemangat dalam mengeksplorasi teknologi baru, selalu berusaha mengikuti perkembangan tren di bidang teknologi dan informasi. Selain itu, saya juga aktif dalam organisasi, yang membantu saya
+      mengembangkan keterampilan kepemimpinan serta komunikasi.
+    </p>
+    <p>Hobi saya seperti bermain game, membuat website, dan membaca buku juga memberi saya wawasan yang lebih luas serta perspektif kreatif dalam berbagai situasi.</p>
+  </body>
 </html>
