@@ -10,16 +10,29 @@
         margin: 0;
         padding: 20px;
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Center content horizontally */
-        text-align: center; /* Center text */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .cv-container {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
       }
 
       table {
         font-family: Arial, sans-serif;
         border-collapse: collapse;
         width: 100%;
-        max-width: 600px; /* Limit max width for better responsiveness */
+        max-width: 600px;
+        margin: 20px auto;
       }
 
       td,
@@ -36,77 +49,104 @@
       img {
         width: 128px;
         height: 128px;
-        border-radius: 50%; /* Make the image circular */
-        margin-bottom: 20px; /* Space below the image */
+        border-radius: 50%;
+        margin-bottom: 20px;
       }
 
       h4 {
-        margin: 10px 0; /* Space above and below headings */
+        margin: 10px 0;
       }
 
-      ul {
-        list-style-type: none; /* Remove bullet points */
-        padding: 0; /* Remove padding */
+      /* Biodata aligned to the left */
+      .biodata {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .biodata li {
+        list-style: none;
+        padding: 5px 0;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #dddddd;
+        margin: 20px 0;
+      }
+
+      /* Justify Karakter Pribadi section */
+      .karakter {
+        text-align: justify;
+        max-width: 600px;
+        margin: 0 auto;
       }
 
       @media (max-width: 768px) {
-        /* Adjust styles for tablets and smaller screens */
         body {
-          padding: 10px; /* Reduce padding on smaller screens */
+          padding: 10px;
+        }
+
+        .cv-container {
+          padding: 10px;
         }
 
         table {
-          width: 100%; /* Table takes full width */
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <!-- Judul CV Online -->
-    <h1>CV Online</h1>
+    <div class="cv-container">
+      <!-- Judul CV Online -->
+      <h1>Curriculum Vitae</h1>
 
-    <!-- Foto Profil -->
-    <h4>FOTO PROFIL</h4>
-    <img src="Rendy_Foto.jpeg" alt="Rendy" />
+      <!-- Foto Profil -->
+      <img src="Rendy_Foto.jpeg" alt="Rendy" />
+      <hr />
 
-    <!-- Biodata Diri -->
-    <h4>BIODATA DIRI</h4>
-    <ul>
-      <li>Nama: Rendy Radithya Supandi</li>
-      <li>NIM: 1201225038</li>
-      <li>Kelas: 22-SI-002</li>
-      <li>Umur: 21 tahun</li>
-      <li>Prodi: Sistem Informasi</li>
-      <li>Mahasiswa Telkom University Kampus Jakarta</li>
-    </ul>
+      <!-- Biodata Diri -->
+      <h4>BIODATA DIRI</h4>
+      <ul class="biodata">
+        <li><strong>Nama:</strong> Rendy Radithya Supandi</li>
+        <li><strong>Umur:</strong> 21 Tahun</li>
+        <li><strong>Jenis Kelamin:</strong> Laki-Laki</li>
+        <li><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 15 Oktober 2002</li>
+        <li><strong>Alamat:</strong> Jl. Bangka II Gg V No. 3A, Pelamampang, Mampang Prapatan</li>
+        <li><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rendyradith@gmail.com" target="_blank">rendyradith@gmail.com</a></li>
+        <li><strong>Status:</strong> Mahasiswa</li>
+      </ul>
+      <hr />
 
-    <!-- Riwayat Pendidikan -->
-    <h4>RIWAYAT PENDIDIKAN</h4>
-    <table>
-      <tr>
-        <th>Nama Sekolah</th>
-        <th>Tahun</th>
-      </tr>
-      <tr>
-        <td>SDN Pelamampang 01 Pagi</td>
-        <td>2009 - 2015</td>
-      </tr>
-      <tr>
-        <td>SMPN 141 Jakarta</td>
-        <td>2015 - 2018</td>
-      </tr>
-      <tr>
-        <td>SMAN 6 Jakarta</td>
-        <td>2018 - 2021</td>
-      </tr>
-    </table>
+      <!-- Riwayat Pendidikan -->
+      <h4>RIWAYAT PENDIDIKAN</h4>
+      <table>
+        <tr>
+          <th>Nama Sekolah</th>
+          <th>Tahun</th>
+        </tr>
+        <tr>
+          <td>SDN Pelamampang 01 Pagi</td>
+          <td>2009 - 2015</td>
+        </tr>
+        <tr>
+          <td>SMPN 141 Jakarta</td>
+          <td>2015 - 2018</td>
+        </tr>
+        <tr>
+          <td>SMAN 6 Jakarta</td>
+          <td>2018 - 2021</td>
+        </tr>
+      </table>
+      <hr />
 
-    <!-- Karakter Saya -->
-    <h4>KARAKTER PRIBADI</h4>
-    <p>
-      Saya adalah pribadi yang antusias dan bersemangat dalam mengeksplorasi teknologi baru, selalu berusaha mengikuti perkembangan tren di bidang teknologi dan informasi. Selain itu, saya juga aktif dalam organisasi, yang membantu saya
-      mengembangkan keterampilan kepemimpinan serta komunikasi.
-    </p>
-    <p>Hobi saya seperti bermain game, membuat website, dan membaca buku juga memberi saya wawasan yang lebih luas serta perspektif kreatif dalam berbagai situasi.</p>
+      <!-- Karakter Pribadi -->
+      <h4>KARAKTER PRIBADI</h4>
+      <p class="karakter">
+        Halo Semua! Saat ini saya sedang kuliah di Telkom University Jakarta Prodi Sistem Informasi. Saya adalah pribadi yang antusias dan bersemangat dalam mengeksplorasi teknologi baru, selalu berusaha mengikuti perkembangan tren di
+        bidang teknologi dan informasi. Selain itu, saya juga aktif dalam organisasi, yang membantu saya mengembangkan keterampilan kepemimpinan serta komunikasi.
+      </p>
+    </div>
   </body>
 </html>
